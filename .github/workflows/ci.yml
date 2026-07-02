@@ -1,10 +1,11 @@
-# push 到 main 与所有 PR 上运行；分支保护可单独勾选各 job（建议先 required: typecheck）
+# push 到 main/dev 与所有 PR 上运行；分支保护可单独勾选各 job（建议先 required: typecheck）
 name: CI
 
 on:
   push:
     branches:
       - main
+      - dev
   pull_request:
 
 concurrency:
